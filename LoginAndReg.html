@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<style>
+
+body {
+        background-image: url("pic.jpg");
+}
+</style>
+<script>
+fieldset{
+border: 1px dotted #61B5CF;
+            margin-top: 1.4em;
+            padding: 0.6em;
+            float:left;
+            width:40%;
+}
+</script>
+</head>
+<body>
+<center>
+<br><br><br>
+<form action="registrered.php" method="POST">
+<fieldset style="width:270px">
+<legend>Registration:</legend>
+<p id="demo" style="color:red"> enter your details</p>
+<label>Username:</label><input type="text"     id="uname"         name="username"     placeholder="enter UN" required></input><br><br>
+<label>Email: </label><input type="text"       id="emailid"       name="email"        placeholder="Your email"></input><br><br>
+<label>Password:</label><input type="password" id="pwd"           name="password"     placeholder="password" required></input><br><br>
+<label>Number: </label><input type="text"      id="number"        name="phnumber"     maxlength="10" placeholder="mobile number" required><br><br>
+<input type="submit" id="submit" value="submit" >
+<p id="copyright_admin" style="color:red"> © KKK CREATIVE STUDIO 2017 </p>
+<p id="dempo" ></p>
+</fieldset>
+</form>
+</center>
+<center>
+<fieldset style="width:270px">
+<legend>login:</legend>
+<form action="LoggedIn.php" method="POST">
+<label>email:    </label><input type="text"   id="emailid"           name="email"      placeholder="last name" required> </input>     <br><br>
+<label>password: </label><input type="text"   id="pwd"               name="password"   placeholder="Your Username">      </input>      <br><br>
+<input type="submit" id="submit" value="login">
+</form>
+</fieldset>
+</center>
+</body>
+</html>
