@@ -7,7 +7,7 @@
     width: 20px;
     padding: 10px;
     border: 1px solid red;
-    
+
 }
 -->
 </style>
@@ -16,7 +16,7 @@
      //<input type="radio" name="qus1" value="">1</br>
      //<input type="radio" name="qus1" value="">1</br> -->
 <script>
-	
+
 	var ans1;
 	var ans2;
 	var ans3;
@@ -33,9 +33,9 @@ function myFunction1()
 }
 /*function myFunctiond1() {
     document.getElementById("saveb1").disabled = true;
-    
+
 }*/
-/*function submitans1() 
+/*function submitans1()
 {
 	var ans1 =  findSelection("qusno1");
     alert(qusno1);
@@ -43,7 +43,7 @@ function myFunction1()
 function submitans1(field)
 {
 	var radios = document.getElementsByName('qusno1');
-	for (var i = 0, length = radios.length; i < length; i++) 
+	for (var i = 0, length = radios.length; i < length; i++)
 {
     if (radios[i].checked)
      {
@@ -58,19 +58,19 @@ function submitans1(field)
 }
 function myFunction2()
 {
-	
+
      document.getElementById("qus2").innerHTML="what is the value of 4-4";
      qus2.innerHTML = qus2.innerHTML  + "<br>     <input  type='radio'  name='qusno2' value='9' +i> 9 </input>"
      qus2.innerHTML = qus2.innerHTML  + "<br>     <input  type='radio'  name='qusno2' value='0' +i> 0 </input>"
      qus2.innerHTML = qus2.innerHTML  + "<br>     <input  type='radio'  name='qusno2' value='6' +i> 6 </input>"
      qus2.innerHTML = qus2.innerHTML  + "<br>     <input  type='radio'  name='qusno2' value='3'+i>  3 </input>"
      qus2.innerHTML = qus2.innerHTML  + "<br>     <button type='button' name='save'  value='save' onclick='submitans2()'+i>save</button>"
-     
+
 }
 function submitans2(field)
 {
 	var radios = document.getElementsByName('qusno2');
-	for (var i = 0, length = radios.length; i < length; i++) 
+	for (var i = 0, length = radios.length; i < length; i++)
 {
     if (radios[i].checked)
      {
@@ -92,7 +92,7 @@ function myFunction3()
      qus3.innerHTML = qus3.innerHTML  + "<br>     <input  type='radio' name='qusno3' value='2'+i> 2</input>"
      qus3.innerHTML = qus3.innerHTML  + "<br>     <input  type='radio' name='qusno3' value='7'+i> 7</input>"
      qus3.innerHTML = qus3.innerHTML  + "<br>     <button type='button' id='saveb' name='save'  value='save' onclick='submitans3()' +i>save</button>"
-     
+
 }
 /*function myFunction() {
     document.getElementById("saveb").disabled = true;
@@ -101,7 +101,7 @@ function myFunction3()
 function submitans3(field)
 {
 	var radios = document.getElementsByName('qusno3');
-	for (var i = 0, length = radios.length; i < length; i++) 
+	for (var i = 0, length = radios.length; i < length; i++)
 {
     if (radios[i].checked)
      {
@@ -119,7 +119,7 @@ function checkans()
 {
 	//int gans1 = ans1;
 	//alert(gsans1);
-	
+
 	//alert(ans2);
 	alert(ans3);
 	/*var cans1 = 1 ;
@@ -132,18 +132,18 @@ function checkans()
 	{
 		if(cans[j]==sans[j])
 		{
-		score = score+1; 
+		score = score+1;
 		alert(score);
 	    }
 		else
 			 break;
-	
+
 	}*/
 }
 </script>
 </head>
 <body>
-//<pre>
+<pre>
 <div><a href="ans1.html" target="q">1</a></div>
 <div><a href="ans2.html" target="q">2</a></div>
 <div><a href="ans3.html" target="q">3</a></div>
@@ -153,9 +153,9 @@ function checkans()
 <button  type="button" value="2"  name='q2'   onClick="myFunction2()">2</button>
 <button  type="button" value="3"  name='q3'   onClick="myFunction3()">3</button>
 <!--<button type="button" id="one"  onClick="myFunction1()">1</button> -->
-<p id="qus1"></p> 
-<p id="qus2"></p> 
-<p id="qus3"></p> 
+<p id="qus1"></p>
+<p id="qus2"></p>
+<p id="qus3"></p>
 <button type="submit" name="finish" value="final" onClick="checkans()">finish</button>
 </form>
 </pre>
