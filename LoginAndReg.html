@@ -5,7 +5,23 @@ body {
         background-image: url("images/11.jpg");
 }
 </style>
-<script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+  $('input[type="submit"]').click(function(){
+  //$('#submit').click(function(){
+     var stremail = $('#emailid').val();
+     var emailatpos = stremailID.indexOf("@");
+     var emailDotpos = stremailID.indexOf(".");
+     if (emailatpos<1 || emailatpos<emailDotpos+2 || emailDotpos+2>=stremailID.length)
+     {
+         alert("Not a valid e-mail address");
+          return false;
+     }
+     alert(""+stremail);
+  });
+});
+</script>
 <script>
 fieldset
 {
@@ -17,25 +33,20 @@ border: 1px dotted #61B5CF;
 }
 </script>
 <script>
-
 function validateForm()
 {
    var stremailID = document.forms["Form"]["email"].value;
    var emailatpos = stremailID.indexOf("@");
-  var emailDotpos = stremailID.indexOf(".");
-   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+   var emailDotpos = stremailID.indexOf(".");
+   if (emailatpos<1 || emailatpos<emailDotpos+2 || emailDotpos+2>=stremailID.length)
    {
        alert("Not a valid e-mail address");
         return false;
    }
  }
-
-
-
-
 </script>
 </head>
-<body>
+<body onload="document.refresh();">
 <center>
 <br><br><br>
 <form name="Form" action="/registrered.php"  onsubmit="return validateForm();" method="POST" >
