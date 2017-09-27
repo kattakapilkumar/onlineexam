@@ -5,9 +5,6 @@ body
 {
         background-image: url("images/11.jpg");
 }
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-<script>
 fieldset
 {
 border: 1px dotted #61B5CF;
@@ -16,7 +13,9 @@ border: 1px dotted #61B5CF;
             float:left;
             width:40%;
 }
-</script>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
 <script>
 function validateForm()
 {
@@ -26,17 +25,17 @@ function validateForm()
    console.log(stremailID);
    //var emailatpos = stremailID.indexOf("@");
   // var emailDotpos = stremailID.indexOf(".");
-    if(stremailID.contains("@"))
+    if(stremailID.indexOf('@') == -1)
       {
-          alert("valid email address");
-          return true;
+          alert("invalid email address");
+          return false;
       }
   // if (regex.test(stremailID))
 //   {
     //   alert("valid e-mail address");
   //      return true;
   // }
-   return false;
+   return true;
  }
 </script>
 </head>
