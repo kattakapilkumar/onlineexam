@@ -4,7 +4,7 @@
 
 </script>
 </head>
-<body onload="document.refresh();">
+<body>
 <center>
 <br><br><br>
 <form name="Form" action="/registrered.php"  onsubmit="return validateForm();" method="POST" >

@@ -51,7 +51,7 @@ else if($conn->query($sql) === TRUE) {
   }
 */
 ?>
-<p>you are succesfully registrered  </p>
+<p>you are  registrered  </p>
 <form action="LoggedIn.php" method="POST">
 <label>Email:      </label><input     type="text"         id="emailid"           name="email"  placeholder="last name" required></input><br><br>
 <label>password:   </label><input     type="text"         id="pwd"               name="password"   placeholder="Your Username"></input><br><br>
