@@ -27,19 +27,23 @@ function validateForm()
   //      return true;
   // }
    return true;
- }
+}
 </script>
 </head>
 <body>
 <center>
+<center><img src="images/opentext1.jpg" alt="logo" style="width:304px;height:100px;"></center>
 <br><br><br>
+<!-- <form name="Form" id = "LoginForm" action="LoggedIn.php" onsubmit="return validateForm();" method="POST">  -->
+<form name="Form" id = "LoginForm" action="LoggedIn.php" onsubmit="return validateForm();" method="POST"> 
 <form name="Form" id = "LoginForm" action="LoggedIn.php" onsubmit="return validateForm();" method="POST">
-<fieldset style="width:270px">
+<fieldset style="width:300px;height:245px">
 <legend>Login:</legend>
 <p id="demo" style="color:red">Enter Your Details</p>
-<label>email:</label><input type="text"       id="emailid"    name="email"      placeholder="last name" required> </input>     <br><br>
-<label>password: </label><input type="text"   id="pwd"    name="password"   placeholder="Your Username" required>      </input>      <br><br>
+<label>email:</label><input type="text"           id="emailid"    name="email"           placeholder="last name" required> </input>         <br><br>
+<label>password: </label><input type="text"       id="pwd"        name="password"        placeholder="Your Username" required></input>      <br><br>
 <input type="submit" id="login" value="login" onclick="">
+<p>If not registered?  <a href="Registration.php" style="color:red">click here</a></p>
 </form>
 </body>
 </html>
