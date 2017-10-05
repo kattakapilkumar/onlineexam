@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+<style>
+body
+{
+        background-image: url("images/11.jpg");
+}
+fieldset
+{
+border: 1px dotted #61B5CF;
+            margin-top: 1.4em;
+            padding: 0.6em;
+            float:left;
+            width:40%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+<script>
+function validateForm()
+{
+   //var stremailID = document.forms[""][""].value;
+   var stremailID = document.getElementById("emailid").value;
+   //var regex = /^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/;
+   console.log(stremailID);
+   //var emailatpos = stremailID.indexOf("@");
+  // var emailDotpos = stremailID.indexOf(".");
+    if(stremailID.indexOf('@') == -1)
+      {
+          alert("invalid email address");
+          return false;
+      }
+  // if (regex.test(stremailID))
+//   {
+    //   alert("valid e-mail address");
+  //      return true;
+  // }
+   return true;
+ }
+</script>
+</head>
+<body>
+<center>
+<br><br><br>
+<form name="Form" id="regForm" action="/registrered.php"  onsubmit="return validateForm();" method="POST" >
+<fieldset style="width:270px">
+<legend>Registration:</legend>
+<p id="demo" style="color:red"> enter your details</p>
+<label>Username:</label><input type="text"     id="uname"         name="username"     placeholder="enter UN" required></input><br><br>
+<label>Email: </label><input type="text"       id="emailid"       name="email"        placeholder="Your email"></input><br><br>
+<label>Password:</label><input type="password" id="pwd"           name="password"     placeholder="password" required></input><br><br>
+<label>Number: </label><input type="text"      id="number"        name="phnumber"     maxlength="10" placeholder="mobile number" required><br><br>
+<input type="submit" id="submit" value="submit">
+<p id="copyright_admin" style="color:red"> © KKK CREATIVE STUDIO 2017 </p>
+<p id="dempo" ></p>
+</fieldset>
+</form>
+</center>
+<center>
+<fieldset style="width:270px">
+<legend>login:</legend>
+<form name="Form" id = "LoginForm" action="LoggedIn.php" onsubmit="return validateForm();" method="POST">
+<label>email:    </label><input type="text"   id="emailid1"           name="email"      placeholder="last name" required> </input>     <br><br>
+<label>password: </label><input type="text"   id="pwd"               name="password"   placeholder="Your Username" required>      </input>      <br><br>
+<input type="submit" id="login" value="login" onclick="">
+</form>
+</fieldset>
+</center>
+</body>
+</html>

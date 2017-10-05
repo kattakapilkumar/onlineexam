@@ -1,0 +1,12 @@
+
+  email          <?php       echo             $email        ?><br>
+
+
+
+  <?php
+  $email =      $_POST["email"];
+  ?>
+
+
+
+<a href="login.html">Login</a>
