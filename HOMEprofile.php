@@ -95,7 +95,7 @@ echo '</div>';
 
 
 echo '<div class = "div1" align = "center">';
-  echo  '<a href="htmltut.html" class = "htmllink">';
+  echo  '<a href="htmltest1.html" class = "htmllink">';
   echo      '<img src="images/HTML1.jpg" class="htmllogo" alt="HTML tutorial" align="middle" style="width:250px;height:250px;">';
   echo  '</a>';
   echo   '<a href="csstut.html" class = "csslink">';
